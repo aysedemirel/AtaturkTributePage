@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&display=swap");
-.wrapper {
+.tribute-info {
   max-width: 1200px;
   padding: 0 2rem;
   margin: 0 auto;
@@ -178,28 +178,39 @@ body {
   color: #000;
   line-height: 1.6;
 }
-img {
-  width: 100%;
-}
+
 a {
   text-decoration: none;
 }
-.ataturk-image-1 img {
-  width: 25vm;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  padding-bottom: 1rem;
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
-blockquote{
-	font-style: italic;
-	text-align: center;
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
-#showcase {
-  background: url("./img/ataturk_header.jpg")
-    no-repeat center center/cover;
+
+#img-caption {
+  margin: 15px 0 5px 0;
+  text-align: center;
 }
-#showcase .showcase-text {
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+}
+#start {
+  background: url("./img/ataturk_header.jpg") no-repeat center center/cover;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -207,21 +218,18 @@ blockquote{
   align-items: center;
   text-align: center;
 }
-#showcase .showcase-text .tribute-title {
+#title {
   padding: 0.5rem 1.5rem;
   margin-top: 71vh;
   background-color: #fff;
 }
-#showcase .showcase-text .tribute-title h1 {
-  font-size: 4.5rem;
-  font-weight: 900;
-}
-#showcase .showcase-text .tribute-title h2 {
+#title h2 {
   font-size: 2.2rem;
   font-weight: 800;
   margin-top: -1.5rem;
 }
-.main-section {
+
+.tribute-info {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -230,7 +238,7 @@ blockquote{
   padding: 3rem 6rem;
   font-size: 1.4rem;
 }
-.main-section #introduction {
+#main #introduction {
   margin: 1rem 0 4rem 0;
   font-size: 1.5rem;
   font-weight: 500;
@@ -238,24 +246,27 @@ blockquote{
   padding-top: 60px;
   margin-top: -60px;
 }
-.main-section #introduction p {
+#main #introduction p {
   padding: 1.4rem 0 1.8rem 0;
 }
-.main-section article {
+#main article {
   margin: 3rem 0;
   padding-top: 60px;
   margin-top: -60px;
 }
-.main-section section {
+#main section {
   margin-bottom: 2rem;
 }
-.main-section .text {
+#main .text {
   font-weight: 400;
 }
-.main-section .text .box {
+#main .text .box {
   display: inline-block;
 }
-.main-section .text .box h2 {
+#main .intro-title h2 {
+  background-color: #fd9842;
+}
+#main .text .box h2 {
   clear: both;
   float: left;
   font-size: 3rem;
@@ -263,20 +274,22 @@ blockquote{
   line-height: 1.2;
   background-color: #fd9842;
 }
-.main-section .text .box h3 {
-  padding: 0.4rem 0 0 0;
-  margin: 1rem 0 -0.8rem 0;
+#main .tribute-info .box h2 {
+  clear: both;
+  float: left;
+  font-size: 3rem;
+  margin: 2rem 0 0.5rem 0;
   line-height: 1.2;
-  background-color: #aaf683;
+  background-color: #fd9842;
 }
-.main-section .text p {
+#main .text p {
   padding: 1.8rem 0 1.8rem 0;
   margin-top: -0.8rem;
 }
-.main-section .text img {
+#main .text img {
   margin: 1.2rem auto;
 }
-.main-section .text aside {
+#main .text aside {
   width: 60%;
   margin: 0 auto;
   padding: 1rem 0 1.2rem 0;
@@ -319,106 +332,6 @@ blockquote{
 .footer .footer-inner .social-links a:hover {
   color: #fd9842;
 }
-@media screen and (max-width: 1030px) {
-  .wrapper {
-    padding: 0 2rem;
-  }
-  .menu-wrap .menu {
-    width: 35vw;
-  }
-  .menu-wrap .menu > div {
-    width: 35vw;
-  }
-  #introduction {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (max-width: 780px) {
-  .wrapper {
-    padding: 0 1rem;
-  }
-  .navbar .header-container .logo {
-    font-size: 1rem;
-  }
-  .menu-wrap .menu {
-    width: 43vw;
-  }
-  .menu-wrap .menu > div {
-    width: 43vw;
-  }
-}
-@media screen and (max-width: 500px) {
-  .wrapper {
-    padding: 0 1rem;
-  }
-  #showcase .showcase-text .tribute-title h1 {
-    font-size: 2.5rem;
-  }
-  #showcase .showcase-text .tribute-title h2 {
-    font-size: 1.4rem;
-    padding-top: 0.7rem;
-  }
-  .main-section {
-    padding: 0;
-    font-size: 1.1rem;
-  }
-  .main-section #introduction {
-    width: 88%;
-    font-size: 1.2rem;
-  }
-  .main-section article {
-    margin: 0;
-  }
-  .main-section .text {
-    width: 88%;
-  }
-  .main-section .text p {
-    padding: 1.8rem 0 1rem 0;
-  }
-  .main-section .text aside {
-    width: 80%;
-  }
-  .main-section .text .box h2 {
-    font-size: 2.2rem;
-    line-height: 1.1;
-    margin: 1.8rem 0 0.5rem 0;
-  }
-  .main-section .text .box h3 {
-    padding: 0.4rem 0 0 0;
-    margin: 0.2rem 0 -0.8rem 0;
-  }
-  .menu-wrap {
-    display: inline;
-  }
-  .menu-wrap .menu {
-    width: 100vw;
-    opacity: 0.96;
-  }
-  .menu-wrap .menu > div {
-    width: 100vw;
-  }
-  .menu-wrap .menu > div > div {
-    height: 100%;
-  }
-  .x-small-img {
-    width: 90%;
-  }
-  .small-img {
-    width: 90%;
-  }
-  .medium-img {
-    width: 100%;
-  }
-  .large-img {
-    width: 100%;
-  }
-  .x-large-img {
-    width: 100%;
-  }
-  .intro-title {
-    padding-top: 1.5rem;
-  }
-}
 
 #myBtn {
   display: none;
@@ -438,4 +351,105 @@ blockquote{
 
 #myBtn:hover {
   background-color: #a0acc7;
+}
+@media screen and (max-width: 1950px) {
+  #title h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .menu-wrap .menu {
+    width: 35vw;
+  }
+  .menu-wrap .menu > div {
+    width: 35vw;
+  }
+  #introduction {
+    font-size: 1.3rem;
+  }
+  #timeline {
+    font-size: 1.3rem;
+  }
+  #more-info {
+    font-size: 1.3rem;
+  }
+  #title h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .navbar .header-container .logo {
+    font-size: 1rem;
+  }
+  .menu-wrap .menu {
+    width: 43vw;
+  }
+  .menu-wrap .menu > div {
+    width: 43vw;
+  }
+  #title h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #start .title h1 {
+    font-size: 2.5rem;
+  }
+  #start .title h2 {
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+  }
+  #main {
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  #main #introduction {
+    width: 88%;
+    font-size: 1.2rem;
+  }
+  #main article {
+    margin: 0;
+  }
+  #main .text {
+    width: 88%;
+  }
+  .text p {
+    padding: 1.8rem 0 1rem 0;
+  }
+  .text aside {
+    width: 80%;
+  }
+  .text .box h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin: 1.8rem 0 0.5rem 0;
+  }
+  .tribute-info .box h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin: 1.8rem 0 0.5rem 0;
+  }
+  .menu-wrap {
+    display: inline;
+  }
+  .menu-wrap .menu {
+    width: 100vw;
+    opacity: 0.96;
+  }
+  .menu-wrap .menu > div {
+    width: 100vw;
+  }
+  .menu-wrap .menu > div > div {
+    height: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+  #title h1 {
+    font-size: 2.5rem;
+  }
 }
