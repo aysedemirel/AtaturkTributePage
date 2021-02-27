@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&display=swap");
-.tribute-info {
+#tribute-info {
   max-width: 1200px;
   padding: 0 2rem;
   margin: 0 auto;
@@ -229,7 +229,7 @@ blockquote {
   margin-top: -1.5rem;
 }
 
-.tribute-info {
+#tribute-info {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -274,7 +274,7 @@ blockquote {
   line-height: 1.2;
   background-color: #fd9842;
 }
-#main .tribute-info .box h2 {
+#main #tribute-info .box h2 {
   clear: both;
   float: left;
   font-size: 3rem;
@@ -425,7 +425,7 @@ blockquote {
     line-height: 1.1;
     margin: 1.8rem 0 0.5rem 0;
   }
-  .tribute-info .box h2 {
+  #tribute-info .box h2 {
     font-size: 2.2rem;
     line-height: 1.1;
     margin: 1.8rem 0 0.5rem 0;
